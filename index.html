@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form With Captcha</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d117a4c5b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="login-form">
+      <div class="form-title">Contect Form</div>
+      <div class="form-input">
+        <label for="username">Full Name</label>
+        <input type="text" id="username" />
+      </div>
+
+      <div class="form-input">
+        <label for="password">Email</label>
+        <input type="email" id="email" />
+      </div>
+
+      <div class="form-input">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" />
+      </div>
+
+      <div class="form-input">
+        <label for="message"></label>
+        <textarea id="message" rows="4" cols="50">
+          Let us know what you need help with..
+        </textarea>
+      </div>
+
+      <div class="captcha">
+        <label for="captcha-input">Enter Captcha</label>
+        <div class="preview"></div>
+        <div class="captcha-form">
+          <input
+            type="text"
+            id="captcha-form"
+            placeholder="Enter captcha text"
+          />
+          <button class="captcha-refresh">
+            <i class="fa fa-refresh"></i>
+          </button>
+        </div>
+      </div>
+      <div class="form-input">
+        <button id="login-btn">Submit</button>
+      </div>
+    </div>
+    <script src="app1.js"></script>
+  </body>
+</html>
